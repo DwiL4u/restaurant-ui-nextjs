@@ -21,9 +21,19 @@ const Price = ({ price, id, options }: Props) => {
       quantity * (options ? price + options[selected].additionalPrice : price)
     );
   }, [quantity, selected, options, price]);
+  const addToCart = () => {
+    const cartItem = {
+      id,
+      quantity,
+      price: total,
+      options: options ? options[selected] : null,
+    };
+    console.log(cartItem);
+  }
   return (
     <div className="flex flex-col gap-2">
       <h2 className="text-2xl font-bold">${total.toFixed(2)}</h2>
+      <p className="text-sm">Product ID: {id}</p>
       {/* options container */}
       <div className="flex gap-4">
         {options?.map((option, index) => (

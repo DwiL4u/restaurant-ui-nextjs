@@ -70,7 +70,10 @@ const Price = ({ price, id, options }: Props) => {
           </div>
         </div>
         {/* cart button */}
-        <button className="uppercase w-56 bg-red-500 text-white p-2 ring-1 ring-red-500">
+        <button
+          className="uppercase w-56 bg-red-500 text-white p-2 ring-1 ring-red-500"
+          onClick={addToCart}
+        >
           Add to Cart
         </button>
       </div>

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="border rounded-lg p-6 shadow-lg w-full max-w-md text-center">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <div className="border rounded-lg p-6 shadow-lg w-full max-w-md text-center bg-white">
         <h1 className="text-2xl font-bold mb-6">Contact Us</h1>
         <div className="space-y-4">
           <div className="flex items-center justify-center">
